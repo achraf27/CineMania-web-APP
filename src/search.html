@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page de Films</title>
+    
+    
+    
+</head>
+
+<body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cinema Passion</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <div class="input-group">
+                        <input type="search" id = "search-bar" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary" id = "search-button"><a href = "search.html">search</a></button>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 text-center">
+            <h1 class="display-4">Your search:</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+
+    <!-- Film Section -->
+    <div class = "container row" id = "film-container"></div>
+
+    <!-- Button Section -->
+    <div class="btn-toolbar container" role="toolbar" id="main-pages">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-secondary" id = "previous">precedent</button>
+          <button type="button" class="btn btn-secondary" id = "next">suivant</button>
+          </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer text-center">
+        <p>&copy; 2024 Cinéma Passion. Tous droits réservés.</p>
+    </div>
+
+
+</body>
+
+<template id = 'my-template'>
+    <div class="col-md-4 mb-4 " id = "filmBox">
+        <div class="card movie-card">
+            <img src="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="title"></h5>
+
+                <a href = "infos.html" class="btn btn-primary" id = "more-info">more</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
+</html>
+
+

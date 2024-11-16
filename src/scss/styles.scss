@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    margin-bottom: 30px;
+}
+.movie-card img {
+    height: 300px;
+    object-fit: cover;
+}
+.movie-card {
+    transition: transform 0.3s;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.btn-group{
+    margin: 0 auto;
+}
+
+.card-img{
+    width: 30%;
+    height: 32vw;
+    margin: 0 auto;
+    
+}
